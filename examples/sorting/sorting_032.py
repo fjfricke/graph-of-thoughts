@@ -727,6 +727,6 @@ if __name__ == "__main__":
     samples = [item for item in range(0, 100)]
     approaches = [io, cot, tot, tot2, got]
 
-    spent = run(samples, approaches, budget, "chatgpt")
+    spent = run(samples, approaches, budget, "llama3-8b-ollama")
 
     logging.info(f"Spent {spent} out of {budget} budget.")
